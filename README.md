@@ -1,2 +1,3 @@
 # BITFullstack-marius
- 
+
+pabandymas rasyti
