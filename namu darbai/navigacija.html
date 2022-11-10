@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="link rel="
+      preconnect
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        font-family: "Roboto";
+        color: white;
+        text-align: justify;
+        padding: 10px;
+      }
+      div {
+        margin: 10px;
+        height: 600px;
+      }
+      h2 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: xx-large;
+        color: white;
+      }
+
+      .pilka {
+        background-color: rgb(192, 158, 118);
+        background-image: url("https://ve.lt/sites/default/files/styles/straipsnis_1x_640x422/public/2014-04/laukiniai-gyvunai-namuose-tampa-mazu-kosmaru.jpg?h=e00325de&itok=kxiOv1VM");
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-position: center;
+        background-size: 40%;
+      }
+      .juoda {
+        background-color: rgb(106, 75, 37);
+        background-image: url("https://media.etaplius.lt/60796e876f2e3/sb-ah7pnb-i6b8-unsplash_520x350.jpg");
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
+        background-position: left;
+        background-size: 80%;
+      }
+      .pink {
+        background-color: rgb(214, 136, 206);
+        text-align: justify;
+      }
+      .jaguaras {
+        width: 600px;
+        float: right;
+        margin: 0px 0px 10px 10px;
+      }
+      .ruda {
+        background-color: rgb(70, 47, 19);
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbo849Gl6jXCA4xWfzKupJPqq_nYvHLA6Jtw&usqp=CAU");
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
+        background-position: right;
+        background-size: 80%;
+      }
+      .bordo {
+        background-color: rgb(99, 35, 37);
+      }
+      .melyna {
+        background-color: rgb(99, 86, 243);
+        background-image: url("https://jp.lt/wp-content/uploads/2018/05/0.733702001525756369.jpg");
+        background-position: 50px;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        background-position-x: 20px;
+        text-align: justify;
+      }
+      .raudona {
+        background-color: rgb(243, 56, 56);
+        text-align: justify;
+        display: table-row;
+      }
+      .panda {
+        width: 80%;
+        margin: 40px 60px;
+        display: table-cell;
+        vertical-align: top;
+      }
+      .panda1 {
+        width: 600px;
+        float: left;
+        margin: 10px;
+      }
+      .zalia {
+        background-color: rgb(74, 124, 81);
+        background-image: url("https://s1.15min.lt/images/photos/2016/09/08/original/amurinis-tigras-57d1722ea5a52.jpg");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
+        background-position: center;
+        text-align: justify;
+        border-spacing: 10px;
+
+        vertical-align: top;
+      }
+      #pirma {
+        display: table-cell;
+        width: 400px;
+        font-size: 20px;
+        padding-left: 140px;
+        text-transform: uppercase;
+        color: rgb(244, 247, 245);
+        vertical-align: top;
+        margin-top: 50px;
+        border: 2px solid black;
+        background-color: rgb(36, 64, 41);
+      }
+      #pirmas {
+        display: table-cell;
+        width: 33%;
+        font-size: 30px;
+        padding: 40px 10px 10px 140px;
+        text-transform: uppercase;
+        color: rgb(238, 243, 241);
+        vertical-align: top;
+
+        font-style: italic;
+      }
+      #antra {
+        display: table-cell;
+        vertical-align: top;
+        border: 2px solid black;
+      }
+      #antras {
+        display: table-cell;
+        vertical-align: top;
+
+        width: 33%;
+        margin: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        background-color: rgb(155, 155, 201);
+        padding: 5px;
+      }
+
+      .lentele li {
+        display: inline;
+        margin: 20px;
+        background-color: rgb(223, 227, 200);
+        font-size: large;
+        padding: 10px;
+        background-color: rgb(218, 197, 197);
+        list-style-type: none;
+      }
+      #romanas {
+        color: black;
+        padding: 2px;
+      }
+      .romanas {
+        margin: 10px 600px;
+        font-weight: lighter;
+        color: black;
+      }
+      table {
+        border: 5px solid black;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 5px solid black;
+        padding: 10px;
+      }
+      th:nth-child(odd) {
+        background-color: rgba(243, 231, 231, 0.5);
+      }
+      tr:nth-child(odd) {
+        background-color: rgba(236, 27, 27, 0.6);
+      }
+      tr:nth-child(even) {
+        background-color: rgba(32, 170, 60, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="lentele">
+      <li><a href="#tigras">TIGRAS</a></li>
+      <li><a href="#panda">PANDA</a></li>
+      <li><a href="#antilope">ANTILOPE</a></li>
+      <li><a href="#panda1">MAZOJI PANDA</a></li>
+      <li><a href="#jaguaras">JAGUARAS</a></li>
+      <li><a href="#liutas">LIUTAS</a></li>
+      <li><a href="#lusis">LUSIS</a></li>
+      <li><a href="#meskenas">MESKENAS</a></li>
+    </ul>
+    <div id="tigras" class="zalia">
+      <h2>Tigras</h2>
+      <ul id="pirma">
+        <li>vienas</li>
+        <li>du</li>
+        <li>trys</li>
+        <li>keturi</li>
+        <li>penki</li>
+        <li>sesi</li>
+        <li>septyni</li>
+        <li>astuoni</li>
+        <li>devyni</li>
+        <li>desimt</li>
+      </ul>
+      <p id="antra">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+    </div>
+    <div id="panda" class="raudona">
+      <h2>Panda</h2>
+      <img
+        class="panda"
+        src="https://media.lrytas.lt/images/2020/04/15/114137703-a3a0ef3c-200d-48c5-8b92-340e2ba86812.jpg"
+        alt=""
+      />
+
+      <p id="antras">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+      <ol id="pirmas">
+        <li>vienas</li>
+        <li>du</li>
+        <li>trys</li>
+        <li>keturi</li>
+        <li>penki</li>
+        <li>sesi</li>
+        <li>septyni</li>
+        <li>astuoni</li>
+        <li>devyni</li>
+        <li>desimt</li>
+      </ol>
+    </div>
+    <div id="antilope" class="melyna">
+      <h2>Antilope</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+      <table>
+        <tr>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+          <th>Lorem, ipsum.</th>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+      </table>
+    </div>
+    <div id="panda1" class="bordo">
+      <h2>Mazoji panda</h2>
+      <img
+        class="panda1"
+        src="https://www.lrt.lt/img/2020/06/13/669193-628039-1287x836.jpg"
+        alt="mazoji-panda"
+      />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+    </div>
+    <div id="jaguaras" class="pink">
+      <h2>Jaguaras</h2>
+      <img
+        class="jaguaras"
+        src="https://s1.15min.lt/static/cache/OTcweDU4MCwsNjE2MzAzLG9yaWdpbmFsLCxpZD01MjI0MTgmZGF0ZT0yMDEyJTJGMDclMkYxOSwyOTk2OTc5Njcw/jaguaras-vienas-paslaptingiausiu-gyvunu-5007faefc99a8.jpg"
+        alt="jaguaras"
+      />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+    </div>
+    <div id="liutas" class="ruda">
+      <h2>Liutas</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+    </div>
+    <div id="lusis" class="juoda">
+      <h2>Lusis</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+    </div>
+    <div id="meskenas" class="pilka">
+      <h2>Meskenas</h2>
+      <p id="meskenas">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur
+        nam corporis dicta! Doloremque earum consequuntur id ut aperiam
+        recusandae ea dolores dolorum totam explicabo cumque distinctio nobis
+        dolore minus possimus magni, laboriosam, quibusdam, suscipit nam culpa
+        facere et. Dolor est labore reiciendis veniam dicta eos ipsum, doloribus
+        eaque veritatis quas, rem nesciunt tempore minima, enim sit quod.
+        Dolorem nihil perspiciatis aspernatur, sint ipsum cupiditate consequatur
+        veritatis rem eius possimus eligendi cumque omnis corrupti sapiente
+        asperiores nesciunt excepturi reprehenderit quae, illo fugiat. Earum
+        quidem dicta quo non fuga ab hic distinctio iure tenetur tempore! Quae
+        culpa laboriosam itaque fuga autem dolor exercitationem odit tempore
+        rerum, voluptates cum perspiciatis libero qui tenetur natus nostrum
+        facilis dicta cupiditate voluptatibus voluptatum ipsa dolores
+        reprehenderit. Dicta autem sit commodi iure natus, reprehenderit
+        excepturi nihil ipsam. Deleniti, cupiditate aperiam. Tempora pariatur
+        molestiae, voluptas cupiditate optio ut et vero rerum reiciendis error
+        expedita a? Ab error ratione, porro corporis sit cupiditate iste
+        nesciunt omnis ducimus asperiores voluptas nihil voluptates labore aut
+        repellendus, qui, molestias modi similique eveniet ad expedita maxime?
+        Aliquam quidem perferendis voluptate consectetur amet eveniet magnam,
+        suscipit hic nemo ut voluptatibus ad ex molestias velit vel expedita
+        eaque mollitia praesentium, earum doloremque repellendus rem libero!
+        Obcaecati cupiditate consequuntur, maxime error perspiciatis earum
+        inventore minima debitis, sint repellat aliquam magni in placeat.
+        Consequatur labore eveniet voluptatibus odio? Fugit, modi mollitia? Et
+        amet quidem animi perferendis dolore. Laboriosam nam eos iste eaque,
+        aspernatur repudiandae! Ad doloribus mollitia culpa laboriosam, officia
+        esse enim sequi eos! Placeat, repellat quibusdam id assumenda accusamus
+        quia autem saepe possimus dolorum exercitationem odio ipsam tempora est
+        dolorem ad, praesentium commodi quos doloribus! Sit, qui sint, vel
+        commodi dolores sed corrupti temporibus, quas quibusdam odio amet
+        laudantium asperiores repudiandae quae? Perferendis reiciendis expedita
+        quibusdam nesciunt, consectetur deserunt repellendus minus ad aut
+        ducimus laboriosam.
+      </p>
+    </div>
+    <div class="romanas">
+      <p id="romanas">
+        <strong>Levo Tolstojaus KARAS IR TAIKA</strong> pagrįstai laikomas
+        absoliučiai tobulu literatūros kūriniu, kuriam nebuvo ir vis dar nėra
+        lygių. Tai rusų literatūros šedevras, kurį garbina visi žymiausi
+        pasaulio rašytojai ir literatūros kritikai. Nepraleiskite galimybės
+        įsigyti itin ribotu vos 999 egz. tiražu išleidžiamą epinį keturių tomų
+        <strong> KARAS IR TAIKA</strong> leidimą kolekcinėje dėžutėje – kai jos
+        baigsis, baigsis visiems laikams!
+      </p>
+      <p id="romanas">
+        <i
+          >Tikriausiai nėra nė vienos žmogiškos patirties, kuri nebūtų paminėta
+          romane KARAS IR TAIKA.</i
+        >
+      </p>
+      <p id="romanas">– Virginia Woolf</p>
+      <p id="romanas">
+        Romanas <strong> KARAS IR TAIKA</strong> – epinis pasakojimas apie XIX
+        a. Rusiją per sudėtingą meilės trikampį, kuris jungia pagrindinius
+        veikėjus.
+      </p>
+      <p id="romanas">
+        Istorija prasideda 1805 m. paskalų ir žmonių perpildytame Sankt
+        Peterburgo vakarėlyje ir seka aristokratiškų Bolkonskių ir Rostovų
+        giminių likimus tuomet, kai Napoleono armija, patiesusi ant menčių visą
+        Europą, įsiveržia į Rusiją.
+      </p>
+      <p id="romanas">
+        Nuolatinis kautynių karštis staigiai nutvilko žmonių dramas ir išstumia
+        į priekį esmines patirtis, kančią, gyvenimo ir mirties, meilės ir
+        praradimo, dvasingumo ir nevilties klausimus...
+      </p>
+      <p id="romanas">
+        Grafas <strong>Levas Tolstojus</strong> (1828–1910) galėjo mėgautis
+        prabanga nuo kūdikystės iki mirties, tačiau asmeninės netektys, nuo
+        kurių neapsaugojo finansinis komfortas, tarnyba Krymo kare paskatino
+        domėtis filosofiniais klausimais apie žmonijos egzistencijos prigimtį,
+        ieškoti aukštesnių tiesų, galop tapti humanistu.
+      </p>
+      <p id="romanas">
+        Išgarsėjęs romanais ANA KARENINA, KARAS IR TAIKA bei IVANO ILJIČIAUS
+        MIRTIS, L. Tolstojus buvo nepaprastai produktyvus rašytojas ir paliko
+        galybę apsakymų, dramų ir publicistikos darbų.
+      </p>
+      <p id="romanas">
+        F. Dostojevskio, G. Flaubert'o, A. Čechovo, V. Woolf, J. J. Joyce'o, T.
+        Manno, M. Prousto ir kitų amžininkų garbinto L. Tolstojaus populiarumas
+        neatslūgsta ir praėjus daugiau nei 150 metų po romano KARAS IR TAIKA
+        pasirodymo. Įvairiuose geriausių visų laikų romanų rinkimuose KARAS IR
+        TAIKA ne kartą užėmė I-ąją vietą.
+      </p>
+      <p id="romanas">
+        <i
+          >Pirmą kartą skaityti romaną KARAS IR TAIKA – tai viena didingiausių
+          literatūrinių patirčių. Skaitydamas jį vėl ir vėl aiškiai suvoki
+          neišmatuojamai gilią prarają tarp vidutiniškai gero ir tobulo romano.
+          Levo Tolstojaus šedevras pagrįstai vertinamas kaip geriausias kada
+          nors parašytas romanas, aukščiausias įmanomas pasiekimas pasaulio
+          grožinėje literatūroje.</i
+        >
+      </p>
+      <p id="romanas">– J. Donaldas Adamsas</p>
+    </div>
+  </body>
+</html>
