@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kurjeriai {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin: 10px 15px;
+        border-top: 1px solid black;
+      }
+      .kurjeriai p {
+        font-size: 15px;
+      }
+      form {
+        background-color: rgb(245, 245, 245);
+        width: 820px;
+        border: 1px solid rgb(218, 216, 216);
+        margin-left: 200px;
+      }
+      .box {
+        background-color: white;
+        margin: 20px 5px;
+        padding: 10px;
+        width: 250px;
+      }
+      #pirmas {
+        padding: 20px 15px 0px;
+        margin: 10px 5px 0px 5px;
+      }
+      #antras {
+        margin: 0px 20px;
+      }
+      .pristatymas {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px;
+        opacity: 0.5;
+        padding-top: 0px;
+      }
+      span {
+        color: red;
+      }
+      select {
+        width: 380px;
+        height: 30px;
+      }
+      #input {
+        width: 374px;
+        height: 27px;
+      }
+      .pristatymas2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px;
+        opacity: 0.5;
+      }
+      img {
+        width: 110px;
+        height: 56px;
+        padding: 0px;
+        margin: 0px;
+      }
+      label {
+        display: block;
+        height: 5px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h4 id="pirmas">Pristatymas i pastomatus</h4>
+      <div class="kurjeriai">
+        <div class="box">
+          <input type="radio" name="lp" id="" />
+          <p>
+            <img
+              src="https://www.siusk24.lt/uploads/terms_couriers_page/image_top/21/lpxpress.png"
+              alt=""
+            />
+          </p>
+          <p><strong>Atsiemimas LP Express pastomate</strong></p>
+          <p>2-4 darbo dienos</p>
+          <p>1,99 eurai</p>
+        </div>
+        <div class="box">
+          <input type="radio" name="lp" id="" />
+          <p>
+            <img
+              src="https://www.siusk24.lt/uploads/terms_couriers_page/image_top/21/lpxpress.png"
+              alt=""
+            />
+          </p>
+          <p><strong>Atsiemimas LP Express pastomate</strong></p>
+          <p>2-4 darbo dienos</p>
+          <p>1,99 eurai</p>
+        </div>
+        <div class="box">
+          <input type="radio" name="lp" id="" />
+          <p>
+            <img
+              src="https://www.siusk24.lt/uploads/terms_couriers_page/image_top/21/lpxpress.png"
+              alt=""
+            />
+          </p>
+          <p><strong>Atsiemimas LP Express pastomate</strong></p>
+          <p>2-4 darbo dienos</p>
+          <p>1,99 eurai</p>
+        </div>
+      </div>
+      <h4 id="antras">Pasirinkite pristatymo vieta</h4>
+      <div class="pristatymas">
+        <p>
+          <label for="">Miestas <span>*</span></label
+          ><br />
+          <select name="Miestas" id="">
+            <option value="">Telsiai</option>
+            <option value="">Mazeikiai</option>
+            <option value="">Plunge</option>
+            <option value="">Telsiai</option>
+            <option value="">Telsiai</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="">Pastomato adresas(pastomatas)<span>*</span></label
+          ><br />
+          <select name="Miestas" id="" placeholder="Miestas">
+            <option value="">Rimi Telsiai (Plunges g. 8</option>
+            <option value="">Mazeikiai</option>
+            <option value="">Plunge</option>
+            <option value="">Telsiai</option>
+            <option value="">Telsiai</option>
+          </select>
+        </p>
+      </div>
+      <h4 id="antras">Pateikite gavejo duomenis</h4>
+      <div class="pristatymas2">
+        <p>
+          <label for="">Vardas<span>*</span></label
+          ><br />
+          <input id="input" type="text" placeholder="Vardas" />
+        </p>
+
+        <p>
+          <label for="">Pavarde<span>*</span></label
+          ><br />
+          <input id="input" type="text" placeholder="Pavarde" />
+        </p>
+      </div>
+      <div class="pristatymas2">
+        <p>
+          <label for="">Mobilaus telefono numeris<span>*</span></label
+          ><br />
+          <input
+            id="input"
+            type="tel"
+            name=""
+            id=""
+            placeholder="8-611-11111"
+          />
+        </p>
+      </div>
+    </form>
+  </body>
+</html>

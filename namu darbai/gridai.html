@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gridai</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav main side"
+          "nav footer footer";
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 80px auto 80px;
+        gap: 30px;
+      }
+      div.header {
+        grid-area: header;
+      }
+      .nav {
+        grid-area: nav;
+      }
+      .main {
+        grid-template-columns: main;
+      }
+      .side {
+        grid-template-columns: side;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      div {
+        background-color: rgb(56, 104, 177);
+        color: white;
+        padding: 20px;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Header</div>
+    <div class="nav">Navigacija</div>
+    <div class="main">Pagrindinis</div>
+    <div class="side">Soninis</div>
+    <div class="footer">Apacia</div>
+  </body>
+</html>
