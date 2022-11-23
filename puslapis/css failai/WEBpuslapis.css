@@ -6,6 +6,7 @@ body {
     background-blend-mode: screen;
     
 }
+
 section.home {
      background-image: url("https://appbeats.themetags.com/img/hero-bg-3.jpg");
      background-size:cover;
@@ -168,17 +169,19 @@ a {
 }
 .flex_container {
     display: flex;
-    align-content: center;
+    gap: 60px;
+  align-items: center;
+    
 }
 .clients_logo img {
-    width: 90px;
-    padding: 0 15px;
-   
+    width: 70px;
+}
+ .clients_logo {
+    display: flex;
+    gap: 30px;
 }
 .flex_container p {
-    margin-right: 80px;
-    margin-top: 0;
-    line-height: 30px;
+   
     font-size: 20px;
     font-weight: lighter;
 }
@@ -208,13 +211,31 @@ a {
     display: flex;
     gap: 30px;
 }
-.promo-box {
+.promo-box-left {
+    border: 1px solid rgb(197, 196, 196);
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    border-top: 5px solid rgb(117, 64, 224);
+    box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
+}
+.promo-box-center {
     border: 1px solid rgb(197, 196, 196);
     padding: 50px;
     margin-top: 20px;
     margin-bottom: 100px;
     border-radius: 8px;
     border-top: 5px solid blue;
+    box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
+}
+.promo-box-right {
+    border: 1px solid rgb(197, 196, 196);
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    border-top: 5px solid rgb(175, 81, 212);
     box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
 }
 .promo-img img {
@@ -237,6 +258,22 @@ a {
    color: red;
    border-radius: 5px;
 }
+.promo-box-center .promo-par .smart {
+    font-size: 10px;
+    background-color: rgb(220, 243, 231);
+   text-transform: uppercase;
+   padding: 5px 10px;
+   color: rgb(50, 175, 80);
+   border-radius: 5px;
+}
+.promo-box-right .promo-par .smart {
+    font-size: 10px;
+    background-color: rgb(227, 217, 252);
+   text-transform: uppercase;
+   padding: 5px 10px;
+   color: blue;
+   border-radius: 5px;
+}
 .promo-par .flexi {
     font-size: 10px;
     background-color: rgb(234, 218, 255);
@@ -244,4 +281,82 @@ a {
    padding: 5px 10px;
    color: purple;
    border-radius: 5px;
+}
+.promo-box-center .promo-par .flexi {
+    font-size: 10px;
+    background-color: rgb(254, 220, 220);
+   text-transform: uppercase;
+   padding: 5px 10px;
+   color:red
+   border-radius: 5px;
+}
+.promo-box-right .promo-par .flexi {
+    font-size: 10px;
+    background-color: rgb(252, 226, 207);
+   text-transform: uppercase;
+   padding: 5px 10px;
+   color: orange;
+   border-radius: 5px;
+}
+
+/* Section Features */
+
+.features {
+    background-color: rgb(249, 249, 249);
+    padding: 70px 0;
+}
+
+.nav-item {
+    display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.nav-item li {
+    display: inline-block;
+    list-style: none;
+    border-bottom: 2px solid rgb(175, 175, 175);
+    padding: 20px 0px;
+    
+}
+.nav-item img {
+    width: 25px;
+    padding-right: 10px;
+    
+}
+.nav-item a {
+    color: black;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.features-items {
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+}
+.features-items img {
+    width: 445px;
+}
+.features-items h1 {
+    color: rgb(150, 77, 214);
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif
+}
+.features-items h2 {
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.features-items p {
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 16px;
+}
+.features-items a {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 30px;
 }
