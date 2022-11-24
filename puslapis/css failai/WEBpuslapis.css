@@ -143,7 +143,7 @@ a {
     padding: 15px 15px; 
     font-weight: bold;
     font-size: 14px;
-   
+    transition: all 0.5s ease-in-out;
 }
 #button_left {
     color: purple;
@@ -152,12 +152,12 @@ a {
 #button_left:hover {
     background: none;
     color: white;
-    transition: all 0.5s ease-in-out;
+    transform: translateY(-8px);
 }
 #button_right:hover {
     color: purple;
     background-color: white;
-    transition: all 0.5s ease-in-out;
+    transform: translateY(-8px);
 }
 /* section clients */
 
@@ -219,6 +219,7 @@ a {
     border-radius: 8px;
     border-top: 5px solid rgb(117, 64, 224);
     box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
+    transition: all 0.5s ease-in-out;
 }
 .promo-box-center {
     border: 1px solid rgb(197, 196, 196);
@@ -228,6 +229,7 @@ a {
     border-radius: 8px;
     border-top: 5px solid blue;
     box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
+    transition: all 0.5s ease-in-out;
 }
 .promo-box-right {
     border: 1px solid rgb(197, 196, 196);
@@ -237,6 +239,7 @@ a {
     border-radius: 8px;
     border-top: 5px solid rgb(175, 81, 212);
     box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
+    transition: all 0.5s ease-in-out;
 }
 .promo-img img {
     width: 80px;
@@ -287,8 +290,8 @@ a {
     background-color: rgb(254, 220, 220);
    text-transform: uppercase;
    padding: 5px 10px;
-   color:red
-   border-radius: 5px;
+   color:red;
+   border-radius : 5px;
 }
 .promo-box-right .promo-par .flexi {
     font-size: 10px;
@@ -297,6 +300,18 @@ a {
    padding: 5px 10px;
    color: orange;
    border-radius: 5px;
+}
+.promo-box-left:hover {
+    margin-top: 10px;
+    margin-bottom: 110px;
+}
+.promo-box-center:hover {
+    margin-top: 10px;
+    margin-bottom: 110px;
+}
+.promo-box-right:hover {
+    margin-top: 10px;
+    margin-bottom: 110px;
 }
 
 /* Section Features */
@@ -313,15 +328,20 @@ a {
   
 }
 .nav-item li {
-    display: inline-block;
+   display: flex;
+   align-content: center;
     list-style: none;
     border-bottom: 2px solid rgb(175, 175, 175);
     padding: 20px 0px;
     
 }
+.nav-item li:hover {
+    border-bottom: 2px solid rgba(175, 175, 175, 0.6);
+}
 .nav-item img {
     width: 25px;
     padding-right: 10px;
+   
     
 }
 .nav-item a {
@@ -343,7 +363,7 @@ a {
     margin-bottom: 20px;
     font-size: 70px;
     font-weight: 100;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 }
 .features-items h2 {
     font-size: 30px;
