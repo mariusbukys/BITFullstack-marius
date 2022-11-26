@@ -12,11 +12,425 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+  <body class="bg-light">
+    <div class="navbar mt-4 bg-white">
+      <div class="container-fluid justify-content-between">
+        <div class="fw-bold col text-center">
+          <h1 class="fs-2 ms-2">Marius & Co.</h1>
+        </div>
+        <!-- SEARCH BAR -->
+        <div class="input-group w-50 text-black-50 col-1 mx-5 py-0">
+          <input
+            type="text"
+            class="form-control fs-5"
+            placeholder="Search"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-primary" type="button" id="button-addon2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- CART BUTTON -->
+        <div class="col-1 d-flex justify-self-center pt-1 ps-5 ms-5">
+          <div class="justify-self-center">
+            <button
+              style="width: 60px; height: 60px"
+              type="button"
+              class="btn btn-white border rounded-circle position-relative"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-cart-fill text-black-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                />
+              </svg>
+              <span
+                class="position-absolute top-0 start-99 translate-middle badge rounded-pill bg-danger"
+              >
+                0
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- SIGN IN COLUMN -->
+        <div class="col-2">
+          <div class="d-flex pt-1">
+            <button
+              style="width: 60px; height: 60px"
+              type="button"
+              class="btn btn-white border rounded-circle position-relative"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="27"
+                fill="currentColor"
+                class="bi bi-person-fill text-black-50"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </button>
+            <div>
+              <p class="ms-3 mb-0 text-black-50">Welcome!</p>
+              <a
+                style="font-size: 16px"
+                class="ms-3 text-body text-decoration-none"
+                href="#"
+              >
+                Sign in | Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 class="my-4 ms-5 py-3">Shopping cart</h1>
+    </div>
+    <div class="bg-white">
+      <div class="row">
+        <!-- Shopping items -->
+        <div class="card col-9 ms-5 mt-5">
+          <!-- heading -->
+          <div style="font-size: 14px" class="d-flex text-black-50">
+            <div class="col">
+              <p class="ps-2">PRODUCT</p>
+            </div>
+            <div class="d-flex col">
+              <p class="px-5">QUANTITY</p>
+              <p>PRICE</p>
+            </div>
+          </div>
+          <!-- First item -->
+          <div class="d-flex my-2">
+            <div class="d-flex col">
+              <div class="col-3">
+                <img
+                  class="w-100 ps-2"
+                  src="/namu darbai/Shopping list/134-1341673_red-hoodie-png-mens-red-hoodie-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-8 ps-3">
+                <p style="font-size: 15px" class="mb-1">
+                  Some name of item goes here nice
+                </p>
+                <p style="font-size: 13px" class="my-0 text-black-50">
+                  Size: XL, Color: blue
+                </p>
+                <p style="font-size: 13px" class="text-black-50">
+                  Brand: Gucci
+                </p>
+              </div>
+            </div>
+            <div class="d-flex col justify-content-end">
+              <div class="col-3">
+                <div class="input-group mt-1">
+                  <select
+                    class="form-select"
+                    id="inputGroupSelect03"
+                    aria-label="Example select with button addon"
+                  >
+                    <option selected>1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-5 text-start ms-3">
+                <p class="my-0 fw-bold">$1156.00</p>
+                <p style="font-size: 13px" class="my-0 text-black-50">
+                  $315.20 each
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <button type="button" class="px-3 btn border btn-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart-fill text-black-50"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                  />
+                </svg>
+              </button>
+              <button type="button" class="px-3 btn border btn-white">
+                Remove
+              </button>
+            </div>
+          </div>
+          <!-- Second Item -->
+          <div class="d-flex my-2">
+            <div class="d-flex col">
+              <div class="col-3">
+                <img
+                  class="w-100 ps-2"
+                  src="/namu darbai/Shopping list/134-1341673_red-hoodie-png-mens-red-hoodie-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-8 ps-3">
+                <p style="font-size: 15px" class="mb-1">
+                  Product name goes here nice
+                </p>
+                <p style="font-size: 13px" class="my-0 text-black-50">
+                  Size: XL, Color: blue
+                </p>
+                <p style="font-size: 13px" class="text-black-50">
+                  Brand: Gucci
+                </p>
+              </div>
+            </div>
+            <div class="d-flex col justify-content-end">
+              <div class="col-3">
+                <div class="input-group mt-1">
+                  <select
+                    class="form-select"
+                    id="inputGroupSelect03"
+                    aria-label="Example select with button addon"
+                  >
+                    <option selected>1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-5 text-start ms-3">
+                <p class="my-0 fw-bold">$1156.00</p>
+                <p style="font-size: 13px" class="my-0 text-black-50">
+                  $315.20 each
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <button type="button" class="px-3 btn border btn-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart-fill text-black-50"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                  />
+                </svg>
+              </button>
+              <button type="button" class="px-3 btn border btn-white">
+                Remove
+              </button>
+            </div>
+          </div>
+          <!-- Third Item -->
+          <div class="d-flex my-2">
+            <div class="d-flex col">
+              <div class="col-3">
+                <img
+                  class="w-100 ps-2"
+                  src="/namu darbai/Shopping list/134-1341673_red-hoodie-png-mens-red-hoodie-png-transparent.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-8 ps-3">
+                <p style="font-size: 15px" class="mb-1">
+                  Another name of some product goes just here
+                </p>
+                <p style="font-size: 13px" class="my-0 text-black-50">
+                  Size: XL, Color: blue
+                </p>
+                <p style="font-size: 13px" class="text-black-50">
+                  Brand: Tissot
+                </p>
+              </div>
+            </div>
+            <div class="d-flex col justify-content-end">
+              <div class="col-3">
+                <div class="input-group mt-1">
+                  <select
+                    class="form-select"
+                    id="inputGroupSelect03"
+                    aria-label="Example select with button addon"
+                  >
+                    <option selected>1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-5 text-start ms-3">
+                <p class="my-0 fw-bold">$1156.00</p>
+                <p style="font-size: 13px" class="my-0 text-black-50">
+                  $315.20 each
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <button type="button" class="px-3 btn border btn-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart-fill text-black-50"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                  />
+                </svg>
+              </button>
+              <button type="button" class="px-3 btn border btn-white">
+                Remove
+              </button>
+            </div>
+          </div>
+          <!-- Make purchase -->
+          <div class="border-top py-4 mt-4 mb-2">
+            <div class="d-flex justify-content-between">
+              <button type="button" class="btn text-body btn-outline-secondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+                Continue shopping
+              </button>
+              <button type="button" class="btn btn-primary">
+                Make Purchase
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <!-- Apply coupon -->
+          <div class="card ms-3 p-4 col-10">
+            <p class="mb-1 fs-5 fw-light">Have coupon?</p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Coupon code"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn btn-primary" type="button" id="button-addon2">
+                Apply
+              </button>
+            </div>
+          </div>
+          <!-- Total price -->
+          <div class="card ms-3 mt-3 col-10 p-4">
+            <div class="d-flex justify-content-between">
+              <p class="fs-5 fw-light">Total price:</p>
+              <p class="fs-5 fw-light">USD 568</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fs-5 fw-light">Discount:</p>
+              <p class="fs-5 fw-light">USD 568</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fs-5 fw-light">Total:</p>
+              <p class="fs-4 fw-bold">$1,650</p>
+            </div>
+            <!-- payment cards -->
+            <div class="border-top">
+              <div class="ms-3">
+                <img
+                  style="width: 60px"
+                  src="/namu darbai/Shopping cart/paypal-payment-icon-editorial-logo-free-vector.jpeg"
+                  alt=""
+                />
+                <img
+                  style="width: 50px; height: 38px; margin-left: -6px"
+                  src="/namu darbai/Shopping cart/4846458.png"
+                  alt=""
+                />
+                <img
+                  style="width: 40px"
+                  src="/namu darbai/Shopping cart/Unknown.png"
+                  alt=""
+                />
+                <img
+                  style="width: 50px"
+                  src="/namu darbai/Shopping cart/2384495.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Delivery -->
+        <div
+          class="card col-9 ms-5 mt-3 py-2 align-middle bg-success bg-opacity-25"
+        >
+          <p class="pt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-truck-fill mx-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+              />
+            </svg>
+            Free Delivery within 1-2 weeks
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
