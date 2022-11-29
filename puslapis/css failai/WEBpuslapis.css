@@ -11,14 +11,14 @@ section.home {
      background-image: url("https://appbeats.themetags.com/img/hero-bg-3.jpg");
      background-size:cover;
      background-repeat: no-repeat;
-     height: 700px;
+     height: 800px;
      padding-top: 50px ;
      position: relative;
 }
 section.home::before {
     content: "";
     background: rgb(212,47,205);
-    background: linear-gradient(90deg, rgba(212,47,205,1) 0%, rgba(9,9,121,1) 35%, rgb(62, 80, 221) 63%, rgb(60, 89, 249) 100%);
+     background-image: linear-gradient(to left, rgba(50, 100, 245, 0.90), rgba(74, 84, 232, 0.88), rgba(91, 66, 219, 0.85), rgba(104, 44, 203, 0.88), rgba(114, 2, 187, 0.90));
     position: absolute;
     width: 100%;
     height: 100%;
@@ -82,7 +82,7 @@ section.home .container .right img {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ header {
     width: 100%; 
     z-index: 3; 
     background: rgb(212,47,205);
-    background: linear-gradient(90deg, rgba(212,47,205,1) 0%, rgba(9,9,121,1) 35%, rgb(62, 80, 221) 63%, rgb(60, 89, 249) 100%);
+    background-image: linear-gradient(to left, rgba(50, 100, 245, 0.90), rgba(74, 84, 232, 0.88), rgba(91, 66, 219, 0.85), rgba(104, 44, 203, 0.88), rgba(114, 2, 187, 0.90));
 }
 
 header .container {
@@ -139,10 +139,9 @@ a {
     color: white;
    border: 1px solid white;
     border-radius: 30px;
-    height: 20px;
-    padding: 15px 15px; 
     font-weight: bold;
-    font-size: 14px;
+    padding: 15px 30px;
+    font-size: 15px;
     transition: all 0.5s ease-in-out;
 }
 #button_left {
@@ -189,7 +188,7 @@ a {
 /* Section Promo */
 
 .promo {
-    padding-top:50px ;
+    padding-top: 30px ;
     text-align: center;
 }
 .promo_text {
@@ -362,8 +361,9 @@ a {
     color: rgb(150, 77, 214);
     margin-bottom: 20px;
     font-size: 70px;
-    font-weight: 100;
-    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    
+   
 }
 .features-items h2 {
     font-size: 30px;
@@ -380,3 +380,257 @@ a {
     font-size: 16px;
     margin-top: 30px;
 }
+/* Analytics  */
+
+section.analytics i.bi {
+    color: white;
+    background-color: #6a06ad;
+    font-size: 27px;
+    padding: 15px;
+    border-radius: 4px;
+ }
+ section.analytics p{
+    font-size: 15px;
+    line-height: 1.8rem;
+    font-weight: 300;
+    padding-right: 5px;
+
+ }
+ section.analytics h5 {
+    font-weight: 600;
+    margin-top: 35px;
+ }
+ section.analytics h2 {
+    font-weight: 600;
+    font-size: 37px;
+ }
+ /* Section Photo Slide */
+
+ section.slide-photo h2 {
+    font-weight: 600;
+    font-size: 37px;
+    padding-top: 50px;
+ }
+ section.slide-photo p {
+    font-size: 15px;
+    line-height: 1.8rem;
+    font-weight: 300;
+ }
+ section.slide-photo ul {
+    list-style: none;
+    margin-left:-220px;
+ }
+ section.slide-photo li img {
+    height: 491px ;
+    width: 278px ;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    
+ }
+ section.slide-photo img {
+    height: 503px ;
+    left: 410px;
+    width: 293px ;
+    bottom: 37px;
+    z-index: 2;
+ }
+ section.slide-photo .slider {
+   overflow: hidden;
+ }
+ /* Section Download */
+ section.download h2 {
+    font-weight: 500;
+    font-size: 37px;
+    padding-bottom: 20px;
+ }
+ section.download p {
+    font-size: 18px;
+    line-height: 2rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+ }
+ section.download img {
+    width: 635px;
+ }
+ section.download .download-left {
+    padding: 100px 5px;
+ }
+ section.download .download-right {
+    padding-top: 100px;
+ }
+
+ /* Section Testimonials */
+ .testimonials {
+    padding-top: 100px;
+    padding-bottom: 100px;
+ }
+
+ section.testimonials .card p {
+    font-size: 15px;
+    line-height: 1.6rem;
+    font-weight: 300;
+ }
+ section.testimonials .card {
+    background-color: rgb(249, 249, 249);
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(234, 234, 234, 0.7 );
+    position: relative;
+ }
+ section.testimonials .card::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: #f8f9f9 transparent transparent transparent;
+    bottom: -30px;
+    left: 40px;
+   
+} 
+
+ section.testimonials .card i {
+    color: rgb(255, 85, 0);
+    font-size: 13px;
+ }
+ .card-line {
+    padding-top: 30px;
+ }
+ section.testimonials h2 {
+    font-weight: 600;
+    font-size: 36px;
+    padding-bottom: 10px;
+ }
+ section.testimonials p {
+    font-size: 18px;
+    line-height: 2rem;
+    font-weight: 300;
+ }
+ .testimonials img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+ }
+ .testimonials .client p {
+    font-size: 15px;
+ }
+ /* Section Pricing */
+ .pricing {
+    background-color:rgb(249, 249, 249) ;
+    padding: 6rem 0;
+ }
+ .pricing .price-compare {
+    padding: 70px 10px;
+ }
+ .pricing .price-compare h2 {
+   font-weight: 600;
+   font-size: 36px;
+ }
+ .pricing .price-compare p {
+    font-size: 18px;
+    line-height: 2rem;
+    font-weight: 300;
+ }
+ .pricing .monthly {
+    background-color:#6a06ad ;
+    color: white;
+    border: 2px solid #6a06ad;
+    font-size: 14px;
+    font-weight: 600;
+ }
+ .pricing .yearly {
+    border: 2px solid #6a06ad;
+    font-size: 14px;
+    background-color: white;
+    font-weight: 600;
+ }
+ .pricing .basic {
+    width: 333px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+ }
+ .pricing .basic h5 {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 0;
+ }
+ .pricing .basic h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: rgb(106, 106, 106);
+    padding: 20px 10px;
+    position: relative;
+ }
+ .pricing .basic h2::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(254,254,254);
+    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgb(215, 215, 215) 48%, rgba(255,255,255,1) 100%);
+    position: absolute;
+} 
+ .pricing .basic p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 12px;
+    color: rgb(124, 131, 156);
+ }
+ .pricing .paragraph {
+     padding-top:25px ;   
+ }
+ .pricing .btn {
+    font-size: 15px;
+    padding: 12px 22px;
+    border: 2px solid #6a06ad;
+    margin: 20px 0 40px 0;
+ }
+ .pricing .left-button a {
+    color:#6a06ad;   
+ }
+ .pricing .left-button a:hover {
+    background-color:#6a06ad ;
+    color: white;
+ } 
+ .pricing .right-button a {
+    background-color:#6a06ad;
+    color: white;
+    box-shadow: 3px 8px 15px 10px rgba(199, 185, 227, 0.3);
+ }
+ .pricing .right-button a:hover {
+    background-color: white;
+    color: black;
+    
+ }
+ .pricing .basic-right {
+    border-top: 4px solid #6a06ad;
+    box-shadow: 0px 8px 15px 10px rgba(199, 185, 227, 0.2);
+ }
+ .pricing .basic-right:hover {
+    transform: translateY(-8px);
+    border-radius: 15px;
+ }
+ .pricing .basic:hover {
+    transform: translateY(-8px);
+    border-radius: 15px;
+    border-top: 4px solid #6a06ad;
+    box-shadow: 0px 8px 20px 15px rgba(199, 185, 227, 0.2);
+    transition: all 0.2s ease-in-out;
+ }
+
+ /* Section Queries */
+ .queries {
+    padding: 100px 0;
+ }
+ .queries h2 {
+    font-weight: 600;
+    font-size: 36px;
+    padding: 15px 0;
+ }
+ .queries p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7rem;
+    padding-bottom: 20px;
+ }
