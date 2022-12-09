@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      // Pirma Uzduotis
+
+      const masyvasAbc = [];
+      let a = 0;
+      let b = 0;
+      let c = 0;
+      let d = 0;
+      for (let i = 0; i < 200; i++) {
+        raides = rand(65, 68);
+        masyvasAbc[i] = String.fromCharCode(raides);
+        if (masyvasAbc[i] === "A") a++;
+        if (masyvasAbc[i] === "B") b++;
+        if (masyvasAbc[i] === "C") c++;
+        if (masyvasAbc[i] === "D") d++;
+      }
+
+      console.log(masyvasAbc.sort());
+      console.log(a, b, c, d);
+
+      //   Trecia Uzduotis
+
+      unikaliReiksme = 0;
+      unikaliKombinacija = 0;
+      masyvas = [];
+      masyvasDu = [];
+      masyvasTrys = [];
+      masyvasUni = [];
+      for (i = 0; i < 200; i++) {
+        raides = rand(65, 68);
+        masyvas[i] = String.fromCharCode(raides);
+      }
+      for (i = 0; i < 200; i++) {
+        raides = rand(65, 68);
+        masyvasDu[i] = String.fromCharCode(raides);
+      }
+      for (i = 0; i < 200; i++) {
+        raides = rand(65, 68);
+        masyvasTrys[i] = String.fromCharCode(raides);
+      }
+      for (
+        i = 0;
+        i < (masyvas.length, masyvasDu.length, masyvasTrys.length);
+        i++
+      ) {
+        masyvasUni.push(masyvas[i] + masyvasDu[i] + masyvasTrys[i]);
+        if (masyvas[i] === masyvasDu[i] && masyvas[i] === masyvasTrys[i])
+          unikaliKombinacija++;
+        if (
+          masyvas[i] !== masyvasDu[i] &&
+          masyvas[i] !== masyvasTrys[i] &&
+          masyvasDu[i] !== masyvasTrys[i]
+        )
+          unikaliReiksme++;
+      }
+
+      console.log(masyvas);
+      console.log(masyvasDu);
+      console.log(masyvasTrys);
+      console.log(masyvasUni.sort());
+      console.log(
+        "Unikaliu Kombinaciju Yra: " +
+          unikaliKombinacija +
+          " Unikaliu Reiksmiu Yra " +
+          unikaliReiksme
+      );
+
+      //   Ketvirta Uzduotis
+
+      let masyvasVienas = [];
+      let masyvasAntras = [];
+
+      while (masyvasVienas.length < 100) {
+        let skaiciai = rand(100, 999);
+        check = masyvasVienas.includes(skaiciai);
+        if (check === false) masyvasVienas.push(skaiciai);
+      }
+      while (masyvasAntras.length < 100) {
+        let skaiciai = rand(100, 999);
+        check = masyvasAntras.includes(skaiciai);
+        if (check === false) masyvasAntras.push(skaiciai);
+      }
+
+      console.log(masyvasVienas.sort());
+
+      console.log(masyvasAntras.sort());
+
+      //   Penkta Uzduotis
+
+      let penktasMasyvas = [];
+
+      for (i = 0; i < masyvasVienas.length; i++) {
+        let skaicius = masyvasVienas[i];
+        let check = masyvasAntras.includes(skaicius);
+        if (check === false) {
+          penktasMasyvas.push(skaicius);
+        }
+      }
+
+      console.log("Skaiciai kuriu nera antrame masyve " + penktasMasyvas);
+
+      // Sesta Uzduotis
+
+      let masyvasSesi = [];
+      for (i = 0; i < masyvasVienas.length; i++) {
+        let skaicius = masyvasVienas[i];
+        let check = masyvasAntras.includes(skaicius);
+        if (check !== false) {
+          masyvasSesi.push(skaicius);
+        }
+      }
+
+      console.log("Skaiciai kurie yra antrame masyve: " + masyvasSesi);
+    </script>
+  </body>
+</html>
