@@ -7,16 +7,38 @@
     <title>Document</title>
   </head>
   <body>
+    <h2>2022/11/30 Uzduotys</h2>
+    <button onclick="names()">2022-11-30 <br />Pirma Uzduotis</button>
+    <button onclick="yearSum()">2022-11-30 <br />Antra Uzduotis</button>
+    <button onclick="lastLetters()">2022-11-30 <br />Trecia Uzduotis</button>
+    <button onclick="fairyTale()">2022-11-30 <br />Ketvirta Uzduotis</button>
+    <button onclick="allNumbers()">2022-11-30 <br />Penkta Uzduotis</button>
+
+    <h2>2022/12/01 Uzduotys</h2>
+    <button onclick="fixedNumber()">2022-12-01 <br />Pirma Uzduotis</button>
+    <button onclick="middleMin()">2022-12-01 <br />Antra Uzduotis</button>
+    <button onclick="vardai()">2022-12-01 <br />Trecia Uzduotis</button>
+    <button onclick="randLetter()">2022-12-01 <br />Ketvirta Uzduotis</button>
+    <h2>Penktadienio issukis</h2>
+    <button onclick="zvakes()">Pirma Uzduotis</button>
+    <button onclick="randFixed()">Antra Uzduotis</button>
+    <button onclick="clock()">Trecia Uzduotis</button>
+    <h2>2020/12/05 Uzduotys</h2>
+    <button onclick="colors()">Antra Uzduotis</button>
+    <button onclick="removeLetter()">Trecia Uzduotis</button>
+    <button onclick="numeris()">Ketvirta Uzduotis</button>
+    <button onclick="anyNum()">Penkta Uzduotis</button>
+    <h2>2022/12/06 Uzduotys</h2>
+    <button onclick="anyNum()">Uzduotis</button>
+    <button onclick="anyNum()">Uzduotis</button>
+    <button onclick="anyNum()">Uzduotis</button>
+
     <script src="/script.js">
       function rand(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1) + min);
       }
-
-      a = rand(1, 6);
-      result = a;
-      document.write('<span style="color:red;">' + a + '</span>');
     </script>
   </body>
 </html>
