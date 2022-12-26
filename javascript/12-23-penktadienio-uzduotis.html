@@ -71,7 +71,8 @@
                           <tr class="items">
                               <td class="align-middle">${item}</td>
                               <td class="text-center align-middle">${qty}</td>
-                              <td><button class="btn remove btn-secondary">Istrinti</button></td>
+                            
+                              <td><button class="btn remove btn-secondary"  >Istrinti</button></td>
                           </tr>`;
 
           document.querySelector("tbody").innerHTML = result;
@@ -79,9 +80,16 @@
         if (shoppingCart.length >= 0) {
           document.querySelector("#message").style = "display:none";
         }
-
+        document.querySelector("form").reset();
         console.log(shoppingCart);
       }
+      // function deleteItem() {
+      //   shoppingCart.map((product, index) => {
+      //     const cartProduct = shoppingCart.indexOf(product);
+
+      //     console.log(cartProduct);
+      //   });
+      // }
 
       const cartElement = document.querySelector("tbody");
       function deleteItem(e) {
